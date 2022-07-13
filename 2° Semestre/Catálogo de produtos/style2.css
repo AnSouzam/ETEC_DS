@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+
+/* HEADER */
+
+.header {
+    display:flex;
+    background:#FFE4E1;
+    justify-content:space-around;
+    align-items:center;
+    padding:5px;
+}
+
+.menu{
+    display:flex;
+    list-style:none;
+    gap: 30px;
+}
+
+.menu li{
+    margin-left:10px;
+    font-size:18;
+    font-family:Arial;                          
+}
+
+.menu li a{
+    display:block;
+    padding:10px;
+    color:#6A6A6A;
+    left: 50px;
+}
+
+.menu li a{
+    display:flex;
+    padding:5px;
+    border-radius:5px;
+}
+
+.menu li a:hover {
+    background-color:#FFC0CB;
+    color: white;
+}
+
+
+/* NAV */
+#bar1{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #FFE4E1;
+    margin-top: 1px;
+    height: 40px;
+    width: 100%;
+    gap: 15px;
+}
+
+input[type=text] {
+    width:10px;
+    height: 30px;
+    border: none;
+    font-size: 14px;
+    background-color: #FFE4E1;
+    background-image: url('img/icon.png');
+    background-position: right; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    outline: none;
+    cursor: pointer;
+}
+ 
+
+input[type=text]:focus {
+    width: 250px;
+    background-color: white;
+    border-radius: 20px;   
+    cursor: text;
+}
+
+#bar1-button{
+    height: 40px;
+    width: 40px;
+    border: none;
+    margin-right: 15px;
+    background-color: #FFE4E1;
+}
+
+#bar1-button:hover{
+    background: rgb(255,192,203);
+    background: linear-gradient(297deg, rgba(255,192,203,1) 0%, rgba(135,206,250,1) 100%);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/* MAIN */
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #919496;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #1C1C1C;
+}
+
+#item-comp, #item-sacola{
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight:800;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.produtos{
+    background-color: #E8E8E8;
+    margin: 10px;
+    height: 450px;
+}
+
+.item{
+    display: flex;
+    padding: 10px;
+}
+
+.item-img{
+    width: 400px;
+    height: 350px;
+}
+
+.item-descrition{
+    display: table-column;
+    padding: 40px
+}
+
+.item-preco{
+    padding-top: 100px;
+}
+
+h3, h4{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #6A6A6A;
+}
+
+h4{
+    font-size: 13px;
+    font-weight: 900;
+}
+
+
+
+
+/*--------*/
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+#cont{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#cont1, #cont2, #cont3{
+    width: 400px;
+}
+
+#cont1, #cont2{
+    border-right: 1px solid black;
+}
+
+img.img2{
+    width: 30px;
+    height: 30px;
+}
+
+h5, p{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#6A6A6A;
+    text-align: center;
+}
+
+h5{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+p{
+    font-size: 14px;
+}
+
+/* Footer */
+#footer{
+    background: black;
+    color: white;
+    padding: 80px 0;
+}
+
+.footer-content{
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+
+.footer-menu{
+    display: table-column;
+    padding: 20px;
+    margin: 0 30px;
+}
+
+.atendimento{
+    width: 150px;
+    text-align: ce;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #919496; 
+    transition: all 300ms ease; 
+}
+
+li:hover{
+    color: #FFC0CB;
+    cursor: pointer;
+}
+
+/* Footer Socials */
+.socials{
+    display: flex;
+}
+
+.socials i{
+    margin: 0 20px;
+    font-size: 1.7rem;
+    transition: all 300ms ease;
+}
+
+.socials i:hover{
+    color: #FFC0CB;
+    cursor: pointer;
+}
+
+
+/* Footer Info */
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 60%;
+    margin: auto;
+    font-weight: bold;
+    color: #919496;
+    font-size: 0.75rem;
+    padding-top: 50px;
+}
+
+.info-items{
+    display: flex;
+    list-style: none;
+}
+
+.info-item{
+    margin: 0 20px;
+    transition: all 300ms ease;
+}
+
+.info-item:hover{
+    color:#FFC0CB;
+    cursor: pointer;
+}
+
+.info-item{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
